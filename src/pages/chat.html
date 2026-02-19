@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messages - Online Chat</title>
+    <link rel="stylesheet" href="../main.scss">
+    <script type="module" src="../main.ts"></script>
+
+    <link rel="stylesheet" href="../modules/chat/chat.scss">
+    <script type="module" src="../modules/chat/chat.ts"></script>
+</head>
+<body>
+<header>
+
+</header>
+<main class="chat-container">
+    <div class="sidebar">
+        <div class="sidebar-header"><h2 class="text-primary">Messages</h2></div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="avatar online">
+                        MK
+                    </div>
+                    <div class="message-info">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Marat Khasanov</h5>
+                            <small>2 hours ago</small>
+                        </div>
+                        <p class="mb-0 last-message">гуд</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="avatar offline">YU</div>
+                    <div class="message-info">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Yevgeniy Ustinov</h5>
+                            <small class="text-body-secondary">3 days ago</small>
+                        </div>
+                        <p class="mb-0 last-message">отлично</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="avatar hidden">SO</div>
+                    <div class="message-info">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Sergei Ostashev</h5>
+                            <small class="text-body-secondary">3 days ago</small>
+                        </div>
+                        <p class="mb-0 last-message">Да-да, только недавно её из пет-проекта вычистил. 🙂</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="chat">
+        <div class="chat-header d-flex gap-3 align-items-center">
+            <div class="avatar hidden">SO</div>
+            <div class="message-info">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Sergei Ostashev</h5>
+                    <small class="text-body-secondary">3 days ago</small>
+                </div>
+                <p class="mb-0 last-message">Invisible</p>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="my-message-bubble">
+                <span>padding-bottom мб просто задать текстовой области чата?</span>
+                <small class="my-message-time">23:32</small>
+            </div>
+            <div class="user-message-bubble">
+                <span>Да неплохо так и сделаем</span>
+                <small class="user-message-time">23:33</small>
+            </div>
+        </div>
+        <div class="message-form">
+            <input type="text" class="form-control" id="newMessageInput" placeholder="Type a message...">
+            <button type="button" class="btn btn-primary"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>

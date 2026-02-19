@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile - Online Chat</title>
+    <link rel="stylesheet" href="../main.scss">
+    <script type="module" src="../main.ts"></script>
+
+    <link rel="stylesheet" href="../modules/profile/profile.scss">
+    <script type="module" src="../modules/profile/profile.ts"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="container-lg">
+        <form id="signUpForm" class="pt-4 pb-4 sign-up-form">
+            <fieldset>
+                <legend class="heading">
+                    <h2>Profile</h2>
+                </legend>
+                <div class="mb-3 row">
+                    <label for="fullnameInput" class="col-sm-2 col-form-label">Fullname</label>
+                    <div class="col-sm-10">
+                        <input readonly id="fullnameInput" type="text" class="form-control" aria-describedby="FullnameHelp">
+                        <div id="fullnameInputValidationFeedback" class="invalid-feedback">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="emailInput" class="col-sm-2 col-form-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input readonly id="emailInput" type="email" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="mb-3 row profile-form-buttons">
+                    <button id="editButton" type="button" class="btn btn-outline-warning">Edit</button>
+                    <button id="cancelButton" type="button" class="btn btn-outline-secondary hidden">Cancel</button>
+                    <button id="submitButton" type="button" class="btn btn-outline-success hidden">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+  overflow-y: hidden;
+}
+
+.chat-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: calc(100dvh - 56px);
+}
+
+.sidebar {
+  height: calc(100dvh - 56px);
+}
+
+.sidebar-header {
+  padding: 16px;
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+}
+
+.chat {
+  height: calc(100dvh - 56px);
+  background-color: #eee;
+  overflow-y: auto;
+  position: relative;
+}
+
+.buttons-container {
+  width: 100%;
+
+  button {
+    width: 100%;
+  }
+}
+
+.avatar {
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+
+  &:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &.online:after {
+    background-color: green;
+  }
+
+  &.offline:after {
+    background-color: orange;
+  }
+
+  &.hidden:after {
+    background-color: grey;
+  }
+}
+
+.last-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message-info {
+  width: calc(100% - 66px);
+}
+
+.chat-header {
+  padding: 16px 24px;
+  background-color: white;
+  border-bottom: 2px solid #eee;
+  border-left: 2px solid #eee;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.chat-messages {
+  padding: 24px;
+  height: 100%;
+}
+
+.message-form {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.my-message-bubble {
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: fit-content;
+  margin-left: auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.my-message-time {
+  color: #575757;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 5px;
+}
+
+.user-message-bubble {
+  background-color: #dadada;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-message-time {
+  color: #575757;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 5px;
+}
+

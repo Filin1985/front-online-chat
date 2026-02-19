@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up - Online Chat</title>
+    <link rel="stylesheet" href="../main.scss">
+    <script type="module" src="../main.ts"></script>
+
+    <link rel="stylesheet" href="../modules/sign-up/sing-up.scss">
+    <script type="module" src="../modules/sign-up/sign-up.ts"></script>
+</head>
+<body>
+<header>
+
+</header>
+<main class="container-lg">
+    <form id="signUpForm" class="sign-up-form">
+        <fieldset>
+            <legend class="heading">Sign up</legend>
+            <div class="mb-3">
+                <label for="fullnameInput" class="form-label">Fullname</label>
+                <input id="fullnameInput" type="text" class="form-control" aria-describedby="FullnameHelp">
+                <div id="fullnameValidationFeedback" class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input id="emailInput" type="email" class="form-control" aria-describedby="emailHelp">
+                <div id="emailValidationFeedback" class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input id="passwordInput" type="password" class="form-control" >
+                <div id="passwordValidationFeedback" class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPasswordInput" class="form-label">Confirm password</label>
+                <input id="confirmPasswordInput" type="password" class="form-control" >
+                <div id="confirmPasswordValidationFeedback" class="invalid-feedback">
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+        <p><a class="link-opacity-75-hover" href="/sign-in">Already have an account? Sign in</a></p>
+    </form>
+</main>
+<footer></footer>
+</body>
+</html>

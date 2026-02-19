@@ -1,0 +1,12 @@
+@use 'bootstrap/scss/bootstrap';
+@use 'toastify-js/src/toastify.css';
+
+.toast-close {
+  opacity: 1;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #e3e3e3;
+}

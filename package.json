@@ -1,0 +1,27 @@
+{
+  "name": "online-chat-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/pages/*.html --port 5000",
+    "build": "parcel build src/pages/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "@types/node": "^24.9.1",
+    "buffer": "^6.0.3",
+    "parcel": "^2.16.0",
+    "sass": "^1.93.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "toastify-js": "^1.12.0"
+  }
+}
